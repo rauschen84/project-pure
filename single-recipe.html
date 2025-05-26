@@ -73,7 +73,14 @@
               <article>
                 <i class="fas fa-user-friends"></i>
                 <h5>serving</h5>
-                <p>6 servings</p>
+                <div class="servings-selector">
+                  <label for="servings"><p>Select servings:</p></label>
+                  <select id="servings">
+                    <option value="2">2 servings</option>
+                    <option value="4">4 servings</option>
+                    <option value="6" selected>6 servings</option>
+                  </select>
+                </div>
               </article>
             </div>
             <p class="recipe-tags">
@@ -129,9 +136,11 @@
           <article class="second-column">
             <div>
               <h4>ingredients</h4>
-              <p class="single-ingredient">2 1/2 lorem ipsum dolor sit.</p>
-              <p class="single-ingredient">1/2 lorem ipsum dolor sit amet.</p>
-              <p class="single-ingredient">3 lorem, ipsum dolor.</p>
+              <ul id="ingredients-list">
+                <li class="single-ingredient">2 1/2 cups shredded carrots</li>
+                <li class="single-ingredient">1/2 cup chopped walnuts</li>
+                <li class="single-ingredient">3 tbsp maple syrup</li>
+              </ul>
             </div>
             <div>
               <h4>tools</h4>
